@@ -19,6 +19,10 @@
                 return true;
             }
 
+            function getObject() {
+                return { varA: "this", varB: 1234 };
+            }
+
             function postMessage(message) {
                 window.postMessage(message);
             }

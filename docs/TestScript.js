@@ -1,5 +1,4 @@
 {
-    // window.webkit.messageHandlers.casinoverse.postMessage("this is a message");
     function getString() {
         return "This is a JS string";
     }
@@ -10,6 +9,10 @@
 
     function getBool() {
         return true;
+    }
+
+    function getObject() {
+        postMessage({ varA: "test", varB: 1234 });
     }
 
     function postMessage(message) {

@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Wind Creek Casino Bot Prevention</title>
+    <script type="text/javascript">
+      // Function to get query parameter by name
+      function getQueryParam(name) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(name);
+      }
+
+      // Extract parameter from the URL
+      const sessionToken = getQueryParam('sessionToken');
+      const siteKey = getQueryParam('siteKey');
+
+      // Use the extracted key as needed
+      console.log('Extracted key:' + sessionToken + siteKey);
+      
+    </script>
+    <script type="text/javascript">
+        var cv_responseCallback;
+        var cv_expirationCallback;
+        var cv_errorCallback;
+
+        var isLoaded = false;
+        var onloadCallback = function() {
+          isLoaded = true;
+          console.log('onLoadedCallback')
+          // grecaptcha.render("cv_recaptcha", {"sitekey":"6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"});
+        }
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+    <style>
+      html, body {
+      background: #a32a29;
+      color: #ffffff;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      font-family: sans-serif;
+      font-size: 3vw;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    @media screen and (orientation: landscape) {
+      html, body { font-size: 2vw; }
+    }
+    @media screen and (min-width: 1024px) {
+      html, body { font-size: 20px; }
+    }
+    h1 {
+      font-size: 1.5em;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      text-align: center;
+      background: #fff;
+      color: #000;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .g-recaptcha {
+      margin: 1rem 0;
+    }
+    .btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+  </head>
+  <body>
+    <!-- <div class="g-recaptcha" data-expired-callback="CV_ExpirationCallback" data-callback="CV_ResponseCallback" data-error-callback="CV_ErrorCallback" data-size="compact"> -->
+    <div id="cv_recaptcha" data-expired-callback="cv_expirationCallback" data-callback="cv_responseCallback" data-error-callback="cv_errorCallback" data-size="compact">
+
+    </div>
+  </body>
+</html>
