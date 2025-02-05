@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.app.WindCreek.CasinoVerse.dev",
+    "sha256_cert_fingerprints":
+    ["BF:39:DD:23:05:DC:C1:A8:BC:94:43:CE:0B:9A:F9:C1:2B:1B:F5:75:52:15:F4:3C:7F:8E:0A:E3:FC:9F:E4:E2"]
+  }
+}]
