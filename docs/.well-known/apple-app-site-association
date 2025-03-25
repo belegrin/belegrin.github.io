@@ -1,0 +1,19 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+            "A222QWC6VY.com.windcreek.dev.cv"
+        ],
+        "paths": [
+          "/prizescanner/*",
+          "/qrlogin/*",
+          "/casinoverse/*",
+          "/verifyNewUser/*",
+          "/verifyChangeEmail/*",
+          "/resetPassword/*"
+        ]
+      }
+    ]
+  }
+}
